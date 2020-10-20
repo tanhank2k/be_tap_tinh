@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="d-flex justify-content-center bg-info">
+    
+    <section class="col-md-6 bg-white position-fixed">
+        <h1 class="text-center">BÉ TẬP TÍNH</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                    
+                        <div class="col-md-4 d-inline p-1 ">                        
+                            <label for="fnum">Số thứ nhất</label>
+                        </div>
+                        
+                        <div class="col-md d-inline" onchange="check()">
+                            <input type="text" id="fnum" name="fnum" value="">
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        
+                        <div class="col-md-4 d-inline p-1">                        
+                            <label for="snum">Số thứ hai</label>
+                        </div>
+                        <div class="col-md-4 d-inline" onchange="check()">
+                            <input type="text" id="snum" name="snum" value="">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class= "col-md-6 text-left">
+                    <form >
+                        <input type="radio" id="multi" name="calc" >
+                        <label for="multi">Nhân</label> 
+                        <input type="radio" id="divide" name="calc"> 
+                        <label for="divide">Chia</label> <br>
+                        <input type="radio"  id="plus" name="calc">
+                        <label for="plus">Cộng</label> 
+                        <input type="radio"  id="sub" name="calc">
+                        <label for="sub">Trừ</label> 
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                    
+                <div class="col-md-2 d-inline p-1">                        
+                    <label for="result">Kết quả</label>
+                </div>
+                
+                <div class="col-md-4 d-inline">
+                    <input type="text" id="result" name="result" readonly>
+                </div>
+                
+                <div class="col-md d-inline">
+                    <button class="f-left" onclick="test()">Tính</button>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                    
+                <div class="col-md-2 d-inline p-1">                        
+                    Thông báo
+                </div>
+                
+                <div class="col-md d-inline p-1 text-danger" id="msg">
+                    
+                </div>
+                
+                
+            </div>
+
+        </div>
+    </section>
+</body>
+
+<script src="./js/funtion.js"></script>
+</html>
